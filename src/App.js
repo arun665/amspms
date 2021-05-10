@@ -22,10 +22,9 @@ function App() {
   return (
 <BrowserRouter>
     <Provider store={store}>
-    <div className="App">
-
+  
 <MainContainer/>
-    </div>
+  
     </Provider>
     </BrowserRouter>
   );

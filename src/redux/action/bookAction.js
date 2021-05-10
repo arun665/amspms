@@ -11,7 +11,6 @@ export const addPassCat=(category,user_id,password)=>{
         url: 'https://aspmsserver.herokuapp.com/api/addcategory',
         data:{password_category:category,user_id:user_id,password:password},
         headers: {
-          Authorization: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InZhcnVuIHNoYXJtIGEiLCJpYXQiOjE2MTc5NzI2NDgsImV4cCI6MTYxNzk3NjI0OH0.iZbwDYeGggwn9GzbbEBQffmU9-S2bezd7L0PUTywHCM',
           'Content-Type': 'application/json'
         }
       };
@@ -46,7 +45,6 @@ console.log(user_id);
         url: 'https://aspmsserver.herokuapp.com/api/getpasscat/'+ user_id,
     
         headers: {
-          Authorization: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InZhcnVuIHNoYXJtIGEiLCJpYXQiOjE2MTc5NzI2NDgsImV4cCI6MTYxNzk3NjI0OH0.iZbwDYeGggwn9GzbbEBQffmU9-S2bezd7L0PUTywHCM',
           'Content-Type': 'application/json'
         }
       };
@@ -97,7 +95,6 @@ export const deletePassCat=(id)=>{
     url: 'https://aspmsserver.herokuapp.com/api/deletecategory',
     data:{id:id},
     headers: {
-      Authorization: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InZhcnVuIHNoYXJtIGEiLCJpYXQiOjE2MTc5NzI2NDgsImV4cCI6MTYxNzk3NjI0OH0.iZbwDYeGggwn9GzbbEBQffmU9-S2bezd7L0PUTywHCM',
       'Content-Type': 'application/json'
     }
   };
