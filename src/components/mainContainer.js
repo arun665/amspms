@@ -36,8 +36,6 @@ var CallContainer=
  </>;
    }
    else{
-   var name=localStorage.getItem("name");
-
 CallContainer=<>    
 
 <Header/>
@@ -54,7 +52,7 @@ CallContainer=<>
  </>
    }
   return (
-    <div className="App">
+    <div>
     
     
     

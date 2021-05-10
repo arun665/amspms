@@ -1,8 +1,9 @@
-import logo from './logo.svg';
+
 import './App.css';
 
 
 import MainContainer from './components/MainContainer.js';
+
 import {BrowserRouter} from 'react-router-dom';
 import {Provider} from "react-redux";
 import store from './redux/Store.js';
