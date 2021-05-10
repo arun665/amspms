@@ -19,15 +19,18 @@ import { Container,Row,Col } from 'react-bootstrap';
 
 
 function App() {
-  return (
+  return (    <div className="App">
 <BrowserRouter>
     <Provider store={store}>
-    <div className="App">
+
 
 <MainContainer/>
-    </div>
+
+    
     </Provider>
+
     </BrowserRouter>
+        </div>
   );
 }
 
