@@ -9,7 +9,7 @@ import Typed from 'react-typed';
 function Home(props){
 return (
 <div id="home">
-<div class="container" id="container">
+<div className="container" id="container">
   <h1> Hi {props.username}</h1>
 <br></br>
 <h2> Welcome to A.S Password Manager</h2>

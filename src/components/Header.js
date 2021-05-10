@@ -26,7 +26,7 @@ function Header(props){
     <Nav className="mr-auto">
       <Nav.Link ><Link to="/home" id="brand">Home</Link></Nav.Link>
  
-      <Nav.Link ><Link to="/weather" id="brand">Weather-App </Link><span class="badge badge-danger">New</span></Nav.Link>
+      <Nav.Link ><Link to="/weather" id="brand">Weather-App </Link><span className="badge badge-danger">New</span></Nav.Link>
  
  
       

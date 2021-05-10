@@ -24,12 +24,12 @@ function BookContainer(props) {
     <div className="container">
     <form className="form">
     {msg}
-    <div class="form-group">
+    <div className="form-group">
     <label for="email">Password-Category:</label>
     <input type="text" className="form-control" placeholder="enter category" onChange={e=>setCategory(e.target.value)}/>
 </div>
 
-<div class="form-group">
+<div className="form-group">
     <label for="email">Password</label>
     <input type="text" className="form-control"  placeholder="enter password" onChange={e=>setPassword(e.target.value)}/>
     </div>
