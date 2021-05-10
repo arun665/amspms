@@ -21,10 +21,10 @@ import './sass/signin.scss';
 import { Container,Row,Col , Form ,Button,Alert} from 'react-bootstrap';
 
 function signupContainer(props) {
-  const [Username,setUsername]=useState('');
-  const [Password,setPassword]=useState('');
-  const [Email,setEmail]=useState('');
-  const [Confirmpassword,setConfirmPassword]=useState('');
+  const [Username,SetUsername]=useState('');
+  const [Password,SetPassword]=useState('');
+  const [Email,SetEmail]=useState('');
+  const [Confirmpassword,SetConfirmPassword]=useState('');
   
   if(props.signupmsg!=''){
               var msg=<Alert variant='danger'> <h3>{props.signupmsg}</h3> </Alert>
@@ -44,24 +44,24 @@ function signupContainer(props) {
     {msg}
   <Form.Group controlId="formBasicEmail">
     <Form.Label>Username {Username} </Form.Label>
-    <Form.Control type="text" defaultValue={props.username}  onChange={e=>setUsername(e.target.value)}/>
+    <Form.Control type="text" defaultValue={props.username}  onChange={e=>SetUsername(e.target.value)}/>
     
 
   </Form.Group>
 
   <Form.Group >
     <Form.Label>Email address</Form.Label>
-    <Form.Control type="email" defaultValue={props.email}  onChange={e=>setEmail(e.target.value)}/>
+    <Form.Control type="email" defaultValue={props.email}  onChange={e=>SetEmail(e.target.value)}/>
   </Form.Group>
 
   <Form.Group >
     <Form.Label>Password</Form.Label>
-    <Form.Control type="password" defaultValue={props.password}  onChange={e=>setPassword(e.target.value)}/>
+    <Form.Control type="password" defaultValue={props.password}  onChange={e=>SetPassword(e.target.value)}/>
    </Form.Group>
 
   <Form.Group >
     <Form.Label>Confirm Password</Form.Label>
-    <Form.Control type="password" defaultValue={props.confirmpassword}  onChange={e=>setConfirmPassword(e.target.value)}/>
+    <Form.Control type="password" defaultValue={props.confirmpassword}  onChange={e=>SetConfirmPassword(e.target.value)}/>
    
   </Form.Group>
 
