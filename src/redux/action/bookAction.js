@@ -90,30 +90,6 @@ export const editPassCat =(id,categories)=>{
 
 
 
-export const updatePassCat =(id,categories,password)=>{
-
-  var OPTIONS= {
-    method: 'PATCH',
-    url: 'https://aspmsserver.herokuapp.com/api/updatecategory',
-    data:{id:id,category:categories,password:password},
-    headers: {
-      Authorization: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InZhcnVuIHNoYXJtIGEiLCJpYXQiOjE2MTc5NzI2NDgsImV4cCI6MTYxNzk3NjI0OH0.iZbwDYeGggwn9GzbbEBQffmU9-S2bezd7L0PUTywHCM',
-      'Content-Type': 'application/json'
-    }
-  };
-
-  axios(OPTIONS).then(res=>
-    console.log(res)).catch(err=>console.log(err));
-
-  return {
-
-      type:UPDATE_PASSCAT,
-      payload:categories,
-      password:password
-  ,id:id
-    }
-}
-
 export const deletePassCat=(id)=>{
 
   var OPTIONS= {
