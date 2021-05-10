@@ -20,7 +20,8 @@ import { getPassCat } from '../redux/action/bookAction';
 import Dashboard from './Dashboard.js';
 import DashBoardHome from './DashboardHome';
 import TempApp from './TempApp';
-function MainContainer(props) {
+
+function MainContainer() {
 const isUserLoggedIn=useSelector(state=>state.user.isLoggedin);
    if(isUserLoggedIn===false || localStorage.getItem("name")===null){
 var CallContainer=
