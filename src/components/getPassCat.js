@@ -44,9 +44,7 @@ console.log(user_id);
       
     }
 
-    const EditCategory=(id,category)=>{
-      dispatch(editPassCat(id,category));
-    }
+    
 const DeleteCategory=(id)=>{
   dispatch(deletePassCat(id));
 }

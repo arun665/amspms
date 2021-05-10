@@ -59,10 +59,6 @@ const mapDispatchtoProps=(dispatch)=>{
 return{
     addPassCat:function(category,user_id,password){
      dispatch(addPassCat(category,user_id,password));
-    },
-    updatePassCat:function(id,category,user_id,password){
-      dispatch(updatePassCat(id,category,user_id,password));
-      
     }
 }
 }
