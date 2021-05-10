@@ -42,6 +42,8 @@ CallContainer=<>
 <Header/>
 <Route exact path="/signin" component={Home}/>
 <Route exact path="/signup" component={Home}/>
+<Route exact path="/amspms" component={Home}/>
+
 <Route exact path="/weather" component={TempApp}/>
 
 <Route exact path="/home" component={Home}/>
