@@ -3,9 +3,9 @@ import react ,{useState} from 'react';
 import {addPassCat,updatePassCat} from "../redux/index";
 import {connect,useSelector, useStore} from "react-redux";
 import Ripples from 'react-ripples';
-import BookContainer from './bookContainer.js';
-import GetPassCat from './getPassCat.js';
-import SignupContainer from './signupContainer.js';
+import BookContainer from './BookContainer.js';
+import GetPassCat from './GetPassCat.js';
+import SignupContainer from './SignupContainer.js';
 import LoginContainer from './LoginContainer.js';
 import Home from './Home.js';
 import Header from './Header.js';
@@ -17,8 +17,8 @@ const Link = require("react-router-dom").Link;
 import { Container,Row,Col } from 'react-bootstrap';
 import { getPassCat } from '../redux/action/bookAction';
 
-import Dashboard from './dashboard.js';
-import DashBoardHome from './dashboardHome';
+import Dashboard from './Dashboard.js';
+import DashBoardHome from './DashboardHome';
 import TempApp from './TempApp';
 function mainContainer(props) {
 const isUserLoggedIn=useSelector(state=>state.user.isLoggedin);

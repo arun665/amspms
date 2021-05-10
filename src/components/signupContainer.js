@@ -3,15 +3,15 @@ import react ,{useState} from 'react';
 import {addPassCat,updatePassCat,signupUser, loginUser} from "../redux/action/userAction";
 import {connect} from "react-redux";
 import Ripples from 'react-ripples';
-import BookContainer from './bookContainer.js';
-import GetPassCat from './getPassCat.js';
+import BookContainer from './BookContainer.js';
+import GetPassCat from './GetPassCat.js';
 import Header from './Header.js';
 import {signupuser} from "../redux/action/bookAction.js";
 const Router = require("react-router-dom").BrowserRouter;
 const Route = require("react-router-dom").Route;
 const Link = require("react-router-dom").Link;
-import Dashboard from './dashboard';
-import SignupContainer from './signupContainer.js';
+import Dashboard from './Dashboard';
+
 import LoginContainer from './LoginContainer.js';
 import './sass/signin.scss';
 
@@ -20,7 +20,7 @@ import './sass/signin.scss';
 
 import { Container,Row,Col , Form ,Button,Alert} from 'react-bootstrap';
 
-function signupContainer(props) {
+function SignupContainer(props) {
   const [Username,SetUsername]=useState('');
   const [Password,SetPassword]=useState('');
   const [Email,SetEmail]=useState('');
@@ -106,7 +106,7 @@ return{
 }
 }
 
-export default connect(mapStatetoProps,mapDispatchtoProps)(signupContainer);
+export default connect(mapStatetoProps,mapDispatchtoProps)(SignupContainer);
 
 
 

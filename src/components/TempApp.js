@@ -2,7 +2,7 @@ import './sass/style.scss';
 
 import  { useState , useEffect } from 'react';
 
-import Header from './weatherheader.js';
+import Header from './Weatherheader.js';
 
 function TempApp(){
     
