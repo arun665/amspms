@@ -1,7 +1,6 @@
 
 import './App.css';
 
-
 import MainContainer from './components/MainContainer.js';
 
 import {BrowserRouter} from 'react-router-dom';
